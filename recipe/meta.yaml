@@ -1,4 +1,4 @@
-{% set version = '0.3.1' %}
+{% set version = "0.4.1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -7,7 +7,7 @@ package:
 
 source:
   url: {{ cran_mirror }}/src/contrib/Archive/tibblify/tibblify_{{ version }}.tar.gz
-  sha256: 47a5bf6c12885aee3c6f4c20c8216e9696873b245537436b8cba0cc70d7ebe98
+  sha256: 8b766510117802e4430392db56e73ac4959e65b4b7c7f9b368844a0eb689c77b
 
 build:
   number: 0
@@ -61,10 +61,8 @@ test:
 about:
   home: https://github.com/mgirlich/tibblify, https://mgirlich.github.io/tibblify/
   license: GPL-3.0-only
-  summary: A tool to rectangle a nested list, that is to convert it into a tibble. This is done
-    automatically or according to a given specification.  A common use case is for nested
-    lists coming from parsing JSON files or the JSON response of REST APIs. It is supported
-    by the 'vctrs' package and therefore offers a wide support of vector types.
+  summary: A tool to rectangle a nested list, that is to convert it into a tibble. This is done automatically or according to a given specification.  A common use case is for nested lists coming from parsing JSON files or the JSON response of REST APIs. It is supported by the 'vctrs' package and therefore offers a wide
+    support of vector types.
   license_family: GPL3
   license_file:
     - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
